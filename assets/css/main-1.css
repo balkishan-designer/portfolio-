@@ -1045,6 +1045,46 @@ section.myabout{
   color: color-mix(in srgb, #ffffff, transparent 25%);
 }
 
+
+.personal-info .info-item {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  border-radius: 8px;
+  background: #f8f9fa;
+}
+
+.personal-info .label {
+  font-size: 13px;
+  color: #6c757d;
+  font-weight: 500;
+}
+
+.personal-info .value {
+  font-size: 15px;
+  font-weight: 600;
+  color: #212529;
+  word-break: break-word;
+}
+
+/* Desktop view */
+@media (min-width: 768px) {
+  .personal-info .info-item {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .personal-info .label {
+    font-size: 14px;
+  }
+
+  .personal-info .value {
+    font-size: 16px;
+  }
+}
+
+
 .about .personal-info {
   margin-top: 2rem;
   padding: 2rem;
